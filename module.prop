@@ -1,7 +1,7 @@
 id=mgcexp
 name=Magical Experience
-version=1.3
-versionCode=4
+version=1.4
+versionCode=5
 author=SkipM4
 description=为 MagicOS 启用/补全功能, 优化体验
 updateJson=https://github.com/SkipM4/mgcexp/raw/main/update.json

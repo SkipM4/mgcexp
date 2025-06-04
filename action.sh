@@ -1,4 +1,4 @@
 echo "-----------------------"
-echo "Magical Experience v1.3"
-echo "你药剂吧干啥"
+echo "Magical Experience v1.4"
+echo "魔法之旅"
 echo "-----------------------"
