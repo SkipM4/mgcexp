@@ -1,6 +1,8 @@
 # Magical Experience
  为 MagicOS 启用/补全功能, 改善MagicOS用户体验的模块(目前仅在MagicOS8.0上测试)
 
+反馈问题请到[Issues](https://github.com/SkipM4/mgcexp/issues/new?template=bug-report--%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88-.md)
+
 ## 功能特性
 
 - **删除内置推广**：
