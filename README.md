@@ -39,3 +39,10 @@
   - 文档扫描
   - 智能拍照
 
+## 预览
+![图片1](https://github.com/SkipM4/mgcexp/blob/main/preview/preview0.png?raw=true)
+![图片2](https://github.com/SkipM4/mgcexp/blob/main/preview/preview1.png?raw=true)
+![图片3](https://github.com/SkipM4/mgcexp/blob/main/preview/preview2.png?raw=true)
+![图片4](https://github.com/SkipM4/mgcexp/blob/main/preview/preview3.png?raw=true)
+![图片5](https://github.com/SkipM4/mgcexp/blob/main/preview/preview4.png?raw=true)
+
