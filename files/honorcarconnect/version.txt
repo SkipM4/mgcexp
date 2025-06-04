@@ -1,0 +1,6 @@
+version=1.12.25.101
+type=HonorCarConnect
+subtype=generic
+compatibleVersion=1
+classify=1
+displayVersion=HC.GENC.1.12.25.101

@@ -1,0 +1,22 @@
+{
+	"type":"HonorCarConnect",
+	"subType":"generic",
+	"params":[
+		{
+			"name":"feature_icce_multi_audio_enable",
+			"type":"bool",
+			"value":"true"
+		},
+		{
+			"name":"feature_icce_enable",
+			"type":"bool",
+			"value":"true"
+		},
+		{
+			"name":"smart_cabin_enable",
+			"type":"bool",
+			"value":"true"
+		}
+	],
+	"compatibleversion":"1"
+}

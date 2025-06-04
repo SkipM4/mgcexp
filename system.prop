@@ -1,0 +1,256 @@
+ro.mgc.debug=false
+service.adb.tcp.port=5555
+
+########型号参数########
+
+ro.product.brand=HONOR
+ro.product.manufacturer=HONOR
+ro.product.odm.brand=HONOR
+ro.product.model=PTP-AN20
+#ro.product.odm.name=PTP-AN20
+#ro.odm.magic.product.model=PTP-AN20
+#ro.odm.magic.product.name=PTP-AN20
+#ro.config.product_version_pre=PTP-AN20
+#msc.sys.oemName=PTP-AN20
+#ro.product.device=HNPTP
+#ro.product.odm.device=HNPTP
+#ro.odm.magic.product.device=HNPTP
+#ro.product.fingerprintName=HONOR-Z234
+#ro.build.id=HONORPTP-AN20
+#ro.build.product=PTP
+#ro.board.hardware_version=HN4PTPPM
+#ro.board.platform=qcom
+#机型名称
+ro.config.marketing_name=荣耀Magic7 RSR 保时捷设计
+#芯片名称
+ro.config.cpu_info_display=骁龙®8至尊版性能平台
+#ro.hardware=SM8750
+#ro.soc.model=SM8750
+#ro.vendor.soc.model=SM8750
+#ro.vendor.soc.model.external_name=SM8750-AC
+#ro.vendor.soc.model.part_name=SM8750-AC
+#GPU Turbo显示的文本
+ro.gpu_turbo=Max Performance
+msc.config.sec_mem_chip=TPM 2.0
+msc.config.comm_mgmt_chip=Balong 6000
+msc.config.power_management_chip=Honor E3
+#MagicOS版本号
+#ro.build.version.magic=MagicOS_9.0.0
+#版本号
+#ro.build.id=AP3A.240905.015.A2
+#ro.build.date.utc=1747888084
+#ro.build.description=PTP-AN20-user 9.0.0 HONORPTP-AN20 175-CHN-LGRP1 release-keys
+#ro.build.display.id=PTP-AN20 9.0.0.175(C00E171R102P9)
+#ro.honor.build.display.id=PTP-AN20 9.0.0.175(C00E171R102P9)
+#ro.build.ver.physical=PTP-AN20 9.0.0.175(C00E171R102P9)
+#ro.build.version.incremental=9.0.0.175C00E171R102P9
+#ro.odm.magic.version.incremental=9.0.0.175C00E171R102P9
+#ro.oem.key1=C00R102
+#序列号
+#ro.serialno=SKIPM41145141919
+#编译主机
+ro.build.host=skipm4-buildbot
+ro.honor.build.host=skipm4-buildbot
+#是否启用伪装参数
+ro.build.hide=false
+#伪装版本号匹配参数
+ro.build.hide.matchers=8.0
+#伪装版本号替换参数
+ro.build.hide.replacements=5.1
+#伪装参数
+ro.build.hide.settings=8;3.2 GHz;16.0GB;408.00 GB;512.00 GB;2560 x 1440;14.0;6.10.3;8.0
+#是否启用水印
+msc.config.watermark=false
+#安全补丁日期
+ro.build.version.security_patch=2025-05-05
+ro.honor.build.version.security_patch=2099-12-31
+#是否使用荣耀安全补丁日期
+#msc.config.use_security_patch=false
+#系统区域
+msc.sys.country=cn
+ro.product.locale.region=CN
+#系统语言
+persist.sys.locale=zh-Hans-CN
+ro.product.locale=zh-Hans-CN
+ro.product.locale.language=zh
+#系统时区
+persist.sys.timezone=Asia/Shanghai
+#是否启用Beta安全控制功能
+ro.config.beta_sec_ctrl=false
+#运行模式
+ro.runmode=normal
+ro.bootmode=normal
+ro.boot.mode=normal
+#ro.boot.veritymode=enforcing
+
+#persist.sys.hiview.base_version=PTP-LGRP1-CHN 9.0.0.175
+#persist.sys.hiview.cota_version=
+#persist.sys.hiview.ecota_version=
+#persist.sys.hiview.cust_version=PTP-AN20-CUST 9.0.0.45(C00)
+#persist.sys.hiview.preload_version=PTP-AN20-PRELOAD 9.0.0.1(C00R205)
+#ro.comp.chipset_version=Chipset-95e1fe 9.0(05NJ)
+#ro.comp.cust_version=Cust-CHN 9.0.0(0002)
+#ro.comp.hl.product_base_version=PTP-LGRP1-CHN 9.0.0.175(SP1)
+#ro.comp.hl.product_cust_version=PTP-AN20-CUST 9.0.0.45(C00)
+#ro.comp.hl.product_preload_version=PTP-AN20-PRELOAD 9.0.0.1(C00R205)
+#ro.comp.preas_version=Preas-CHN 9.0.0(0000)
+#ro.comp.preas_version.full=Preas-CHN 9.0.0(V)
+#ro.comp.product_version=Product-PTP 9.0.0(0000)
+#ro.comp.system_version=System 9.0.0(2EGH)
+#ro.comp.version_version=Version-PTP-AN20-000000 9.0(002V)
+#ro.magic.fastbootversion=Chipset-95e1fe 9.0(05NJ)_FASTBOOT
+#ro.magic.systemversion=System 9.0.0(2EGH)
+
+########功能参数########
+
+#设置收窄显示
+msc.settings.nal_show=true
+#DNS设置
+ro.odm.cur_primary_dns=223.5.5.5
+ro.odm.cur_secondary_dns=1.1.1.1
+#系统是否root
+persist.sys.root.status=0
+#avb状态
+#ro.boot.verifiedbootstate=green
+#boot验证模式
+#ro.boot.veritymode=enforcing
+#是否OTA系统参数
+msc.config.updateCotaPara=true
+#设置向导模式
+ro.setupwizard.mode=DISABLED
+ro.setupwizard.rotation_locked=false
+setupwizard.theme=glif_v3_light
+#插上USB使用的光盘镜像
+#ro.cust.cdrom=/product_h/region_comm/china/cdrom/autorun.iso
+#是否启用长按电源键唤醒语音助手
+msc.config.power_voice_key=false
+#是否启用3D充电动画
+magic_agp_charging_animation_3d_enable=1
+#是否启用多窗口优化
+magic_agp_multiwindow_perf_optimize_enable=1
+msc.config.multiwindow_optimization=true
+#是否启用多屏幕APP流转
+msc.multiscreen.appstream_enable=true
+#连接到Windows多APP数量
+msc.yourphone.multiapp_num=5
+#是否启用桌面模式
+msc.config.desktop_mode=true
+#是否启用DP电脑模式
+msc.config.dp_pc_mode=true
+#是否启用魔法窗口
+msc.config.magic_window_enable=true
+#是否支持魔法方块
+msc.launcher.magic_cube_enable=true
+#是否支持魔法书架
+msc.launcher.magic_library_support=2
+#默认屏幕刷新率挡位
+#msc.agp.screen_default_freq=2
+#AOD支持
+ro.config.support_aod=2
+#支持的AOD特性
+msc.aod.aod_support_feature=23
+#支持的AOD样式
+msc.aod.support_display_style=2,5,5,0
+#支持的面部模式
+ro.config.support_face_mode=9
+#支持刷脸支付
+ro.config.support_facepay_mode=1
+#网络卡顿优化特性
+#msc.booster.network_lags_optimize_feature=3
+#是否支持双WiFi
+msc.wifi.support_dualwifi=true
+#是否禁用WiFi显示
+ro.config.disabled_wifi_display=false
+#是否根据城市切换VoNR
+msc.booster.vonr_switch_by_city=true
+#是否启用联系人同步
+msc.config.contacts_sync=true
+#是否启用DTS设置
+msc.config.dts_settings=true
+#是否启用自由窗口
+msc.config.freeform_enable=true
+#是否支持隐私空间
+msc.config.privacySpace=true
+ro.config.support_privacyspace=true
+#是否支持隐私时刻
+msc.config.support_privacytime=1
+#是否支持APP克隆
+msc.config.support_clone_app=true
+#是否支持地理围栏功能
+msc.config.support_geofence=true
+#是否支持base64编码的联系人vcard
+msc.config.vcardBase64=true
+#待机模式支持特性
+msc.standby.support_feature=21
+#超级设备支持特性
+msc.super_device.capability_level=1,2,3,4,5,6,7,8,11,12,13,14,15,19
+#是否允许WiFi桥接
+msc.config.wifibridge=true
+#是否支持睡眠模式
+msc.feature_sleep_mode=true
+#是否启用前台应用数据优化
+msc.foreground_data_opt_enable=true
+#是否强制启用APP启动动画
+#msc.launcher.force_app_launch_animation_enable=true
+#是否启用解锁动画
+#msc.launcher.unlock_animation=true
+#是否禁用HonorBeam
+msc.settings.honorbeamdisabled=false
+#是否启用智能双卡
+msc.protocol.smart_dual_card=true
+#是否支持5G模式
+msc.settings.support_5g_mode=true
+#是否显示双5G开关
+msc.config.dual_5g_show_switch=true
+#是否支持VoNR
+msc.settings.support_vonr=true
+#是否全网通
+ro.config.full_network_support=true
+#省电模式下是否一直保持网络连接
+#mscw.power.saving.always.netconnect=false
+#是否自动退出省电模式
+mscw.power.saving.autoquit=true
+#游戏助手
+ro.config.gameassist=1
+ro.config.gameassist.anti-touch=1
+ro.config.gameassist.full-finger=1
+ro.config.gameassist_soundtovibrate=1
+#是否支持EID
+ro.config.support_eid=true
+#是否启用EasyGo服务
+ro.config.easygoservice_enabled=true
+#是否支持LED
+#msc.config.support_led=false
+####相机参数
+#是否限制后摄快照
+#msc.camera.BackSnapShotLimit=true
+#后摄录像默认分辨率
+msc.camera.back_video_default_value=1080P
+#前摄录像默认分辨率
+msc.camera.front_video_default_value=1080P
+#是否启用前摄触摸拍照
+msc.camera.front_touch_shot=off
+#是否启用相机快速拍摄
+msc.camera.fastcapture=true
+#是否启用相机文档识别功能
+msc.camera.documentrecognition=true
+#是否启用光绘涂鸦功能
+msc.camera.lightpainting=true
+#是否启用动态照片
+msc.camera.livephoto_enable=true
+#是否启用vlog拍摄
+msc.camera.vlog=true
+#是否允许保存RAW格式照片
+msc.camera.rawphoto.save=true
+#是否启用慢动作拍摄
+msc.camera.slowmotion=true
+#是否启用智能拍摄
+msc.camera.smartshoot_enable=true
+#是否启用dex2oat64
+dalvik.vm.dex2oat64.enabled=true
+#是否启用DRM服务
+drm.service.enabled=true
+#是否显示多用户界面
+fw.show_multiuserui=1
+#最大用户数
+fw.max_users=4
