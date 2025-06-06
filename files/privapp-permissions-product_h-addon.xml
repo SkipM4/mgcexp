@@ -6,6 +6,23 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.hihonor.collect">
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.hihonor.permission.ACTIVITY_NOTIFIER_PERMISSION"/>
+        <permission name="com.hihonor.permission.HONOR_LOCK_SYSTEM_ROTATION"/>
+        <permission name="com.hihonor.permission.MANAGE_FOLD_SCREEN"/>
+        <permission name="com.hihonor.permission.SET_WINDOW_MODE"/>
+        <permission name="com.hihonor.permission.sec.ACCESS_UDID"/>
+        <permission name="hihonor.android.permission.HW_SIGNATURE_OR_SYSTEM"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.hihonor.desktop.systemui">
         <permission name="android.permission.BATTERY_STATS"/>
         <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
@@ -60,5 +77,5 @@
         <permission name="com.hihonor.permission.SET_WINDOW_MODE"/>
         <permission name="hihonor.android.permission.HW_SIGNATURE_OR_SYSTEM"/>
     </privapp-permissions>
-
+    
 </permissions>

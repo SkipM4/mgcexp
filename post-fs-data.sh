@@ -14,9 +14,15 @@ PRODUCT_H_OVERLAY_DIR="$OVERLAY_DIR/product_h"
 PRODUCT_H_WORK_DIR="$PRODUCT_H_OVERLAY_DIR/work"
 PRODUCT_H_MERGED_DIR="$PRODUCT_H_OVERLAY_DIR/merged"
 
+SYSTEM_DIR="/system"
+SYSTEM_OVERLAY_DIR="$OVERLAY_DIR/system"
+SYSTEM_WORK_DIR="$SYSTEM_OVERLAY_DIR/work"
+SYSTEM_MERGED_DIR="$SYSTEM_OVERLAY_DIR/merged"
+
 # 创建 overlayfs 所需的目录
 mkdir -p "$PRELOAD_WORK_DIR" "$PRELOAD_MERGED_DIR"
 mkdir -p "$PRODUCT_H_WORK_DIR" "$PRODUCT_H_MERGED_DIR"
+mkdir -p "$SYSTEM_WORK_DIR" "$SYSTEM_MERGED_DIR"
 
 # 创建 preload 的 overlayfs
 mount -t overlay overlay -o lowerdir="$PRELOAD_DIR",upperdir="$PRELOAD_MERGED_DIR",workdir="$PRELOAD_WORK_DIR" "$PRELOAD_MERGED_DIR"
@@ -46,13 +52,30 @@ cp -r /data/adb/mgcexp/product_fonts $PRODUCT_H_MERGED_DIR/hn_oem/$MODEL/
 cp -r /data/adb/mgcexp/aodThemes $PRODUCT_H_MERGED_DIR/etc/
 cp -r /data/adb/mgcexp/honorcarconnect $PRODUCT_H_MERGED_DIR/region_comm/china/
 cp /data/adb/mgcexp/privapp-permissions-product_h-addon.xml $PRODUCT_H_MERGED_DIR/etc/permissions/
-cp -r /data/adb/mgcexp/app/* $PRODUCT_H_MERGED_DIR/app/
+cp -r /data/adb/mgcexp/product_h-app/* $PRODUCT_H_MERGED_DIR/app/
 cat $PRODUCT_H_MERGED_DIR/etc/xml/APKInstallListRelease.txt /data/adb/mgcexp/APKInstallListRelease.txt > $PRODUCT_H_MERGED_DIR/etc/xml/APKInstallListRelease.txt
 cat $PRODUCT_H_MERGED_DIR/etc/xml/DelAPKInstallListRelease.txt /data/adb/mgcexp/DelAPKInstallListRelease.txt > $PRODUCT_H_MERGED_DIR/etc/xml/DelAPKInstallListRelease.txt
 
 # 同步更改到 /product_h
 mount --bind "$PRODUCT_H_MERGED_DIR" "$PRODUCT_H_DIR"
 
+# 创建 system 的 overlayfs
+mount -t overlay overlay -o lowerdir="$SYSTEM_DIR",upperdir="$SYSTEM_MERGED_DIR",workdir="$SYSTEM_WORK_DIR" "$SYSTEM_MERGED_DIR"
+
+# 操作 system
+cp -r /data/adb/mgcexp/system-app/* $SYSTEM_MERGED_DIR/app/
+cp /data/adb/mgcexp/privapp-permissions-system-addon.xml $SYSTEM_MERGED_DIR/etc/permissions/
+cp -r /data/adb/mgcexp/system-priv-app/* $SYSTEM_MERGED_DIR/priv-app/
+if [[ ! -f "$SYSTEM_MERGED_DIR/etc/xml/multidpi_whitelist.xml" ]] || 
+   [[ $(stat -c%s "/data/adb/mgcexp/multidpi_whitelist.xml") -gt $(stat -c%s "$SYSTEM_MERGED_DIR/etc/xml/multidpi_whitelist.xml") ]]; then
+    rm -rf $SYSTEM_MERGED_DIR/etc/xml/multidpi_whitelist.xml
+    cp /data/adb/mgcexp/multidpi_whitelist.xml $SYSTEM_MERGED_DIR/etc/xml/
+fi
+
+# 同步更改到 /system
+mount --bind "$SYSTEM_MERGED_DIR" "$SYSTEM_DIR"
+
 # 清理
 umount "$PRELOAD_MERGED_DIR"
 umount "$PRODUCT_H_MERGED_DIR"
+umount "$SYSTEM_MERGED_DIR"

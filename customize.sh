@@ -1,5 +1,5 @@
 ui_print "---------------------------"
-ui_print "Magical Experience 1.4 Full"
+ui_print "Magical Experience 1.5 Full"
 ui_print "---------------------------"
 ui_print "正在清理缓存..."
 rm -rf /data/overlay

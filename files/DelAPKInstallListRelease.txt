@@ -1,1 +1,6 @@
+/product_h/app/BaiduInput/BaiduInput.apk
+/product_h/app/GlobalWrite/GlobalWrite.apk
+/product_h/app/Hn_LivePaper/Hn_LivePaper.apk
 /product_h/app/HnAssociateAssistant/HnAssociateAssistant.apk,priv
+/product_h/app/HnSatellite/HnSatellite.apk,priv
+/product_h/app/HonorAutoApp8/HonorAutoApp.apk

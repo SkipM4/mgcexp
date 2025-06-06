@@ -1,12 +1,8 @@
 /product_h/app/AirSharingClient/AirSharingClient.apk
 /product_h/app/DTSSoundEffect/DTSSoundEffect.apk,priv
-/product_h/app/GlobalWrite/GlobalWrite.apk
-/product_h/app/Hn_LivePaper/Hn_LivePaper.apk
 /product_h/app/HnAOD14/HnAOD.apk
 /product_h/app/HnEasyGo/HnEasyGo.apk
 /product_h/app/HnParallelSpace/HnParallelSpace.apk
 /product_h/app/HnPCSystemUI/HnPCSystemUI.apk,priv
-/product_h/app/HnSatellite/HnSatellite.apk,priv
 /product_h/app/HnStandby/HnStandby.apk
-/product_h/app/HonorAutoApp8/HonorAutoApp.apk
 /product_h/app/NewCallSdk/NewCallSdk.apk,priv
